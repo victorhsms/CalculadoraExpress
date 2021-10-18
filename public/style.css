@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+body {
+    background: #99DD99;
+}
+
+.home.soma-body {
+    background: #FC6;
+    transition: 0.6s;
+}
+
+.home.subtracao-body {
+    background: #36F;
+    transition: 0.6s;
+}
+
+.home.multiplicacao-body {
+    background: #C3F;
+    transition: 0.6s;
+}
+
+.home.divisao-body {
+    background: #C00;
+    transition: 0.6s;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 20vh auto 0;
+    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: #FCFAFA;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 0.313rem 0.313rem 0 0;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+main input {
+    border-radius: 0.313rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 18px;
+}
+
+main input::placeholder {
+    font-size: 1rem;
+    color: #7D7D7D;
+}
+
+main input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.butoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.butoes button {
+    width: 22%;
+    border-radius: 0.313rem;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    background: #E8EEF2;
+    cursor: pointer;
+}
+
+.soma:hover {
+    background: #FC6;
+}
+
+.soma.active {
+    background: #FC6;
+}
+
+.subtracao:hover {
+    background: #36F;
+}
+
+.subtracao.active {
+    background: #36F;
+}
+
+.multiplicacao:hover {
+    background: #C3F;
+}
+
+.multiplicacao.active {
+    background: #C3F;
+}
+
+.divisao:hover {
+    background: #C00;
+}
+
+.divisao.active {
+    background: #C00;
+}
+
+.butao-resultado {
+    display: none;
+}
+
+.butao-resultado.active {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.8rem 0;
+    background: #E8EEF2;
+    border-radius: 0 0 0.313rem 0.313rem;
+    cursor: pointer;
+}
+
+.butao-resultado.active:hover {
+    background: #99DD99;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 375px) {
+    .conteudo {
+        width: 90vw;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+}

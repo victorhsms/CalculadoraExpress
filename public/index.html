@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Express</title>
+</head>
+<body class="home">
+    <div class="conteudo">
+        <main>
+            <h2>Calculadora Express</h2>
+            <input type="number" id="number1" placeholder="Informe o primeiro valor">
+            <div class="butoes">
+                <button onclick="Buttons.somaButton()" class="soma">+</button>
+                <button onclick="Buttons.subtracaoButton()" class="subtracao">—</button>
+                <button onclick="Buttons.multiplicacaoButton()" class="multiplicacao">X</button>
+                <button onclick="Buttons.divisaoButton()" class="divisao">÷</button>
+            </div>
+            <input type="number" id="number2" placeholder="Informe o segundo valor">
+        </main>
+        <button onclick="Resultado.resultado()" class="butao-resultado">Resultado</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
